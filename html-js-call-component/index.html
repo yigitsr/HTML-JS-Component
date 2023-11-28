@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background: #000000;
+    }
+
+    .container{
+        background: #d1d1d1;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .secondContainer{
+        background: #8d8d8d;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .thirdContainer{
+        background: #555555;
+        width: 100%;
+        height: 20vh;
+    }
+</style>
+
+<body onload="load();">
+    
+
+
+            <div id="container" class="container"></div>
+            <div id="secondContainer" class="secondContainer"></div>
+            <div id="thirdContainer" class="thirdContainer"></div>
+
+    
+    <script>
+
+        function load(){
+            document.getElementById('container').innerHTML = renderContainer();
+            document.getElementById('secondContainer').innerHTML = renderSecondContainer();
+            document.getElementById('thirdContainer').innerHTML = renderThirdContainer();
+        }
+
+        function renderContainer(){
+            return `
+                <h1>First Container</h1>
+                <h2>Dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+            `;
+        }
+
+        function renderSecondContainer(){
+            return `
+                <h1>Second Container</h1>
+                <h2>Dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+            `;
+        }
+
+        function renderThirdContainer(){
+            return `
+                <h1>Second Container</h1>
+                <h2>Dolor sit amet</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+            `;
+        }
+    </script>
+</body>
+</html>

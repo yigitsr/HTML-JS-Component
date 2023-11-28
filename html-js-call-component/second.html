@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background: #262626;
+    }
+
+    .container{
+        background: #d1d1d1;
+        width: 100%;
+        height: 20vh;
+    }
+</style>
+
+<body>
+    
+
+
+    <div id="container" class="container">
+   
+    </div>
+
+    
+    <script>
+
+        function renderContainer(){
+                return `
+                    <h1>Lorem Ipsum</h1>
+                    <h2>Dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
+                `;
+        }
+        function load(){
+            document.getElementById('container').innerHTML = renderContainer();
+        }
+
+        load();
+
+    </script>
+
+
+</body>
+</html>
