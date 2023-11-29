@@ -5,42 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-
 <style>
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
     body{
         background: #262626;
     }
-
     .container{
         background: #d1d1d1;
-        width: 100%;
+        width: 30%;
         height: 20vh;
+        border-radius: 12px;
     }
 </style>
-
 <body>
     
+    <div id="container" class="container"></div>
+    <button onclick="createComponent()" >Create a component</button>
 
-
-    <div id="container" class="container">
-   
-    </div>
-
-    
     <script>
-
         function renderContainer(){
                 return `
                     <h1>Lorem Ipsum</h1>
                     <h2>Dolor sit amet</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, saepe!</p>
                 `;
         }
@@ -50,8 +40,10 @@
 
         load();
 
+        function createComponent(){
+            document.getElementById('container').innerHTML += renderContainer();
+        }
+
     </script>
-
-
 </body>
 </html>
